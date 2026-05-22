@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Colly Furlan | Portfólio Pessoal</title>
+    <meta name="description" content="Portfólio pessoal de Daniel Colly Furlan.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Montserrat:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR (ABAS) -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" data-tab="inicio">Daniel Colly Furlan</a>
+            <nav class="nav-links">
+                <button class="tab-btn active" data-tab="inicio">Início</button>
+                <button class="tab-btn" data-tab="sobre">Sobre Mim</button>
+                <button class="tab-btn" data-tab="experiencias">Experiências</button>
+                <button class="tab-btn" data-tab="estudos">Estudos</button>
+                <button class="tab-btn" data-tab="disciplinas">Disciplinas Eng. de Software</button>
+                <button class="tab-btn" data-tab="hackathons">Hackathons</button>
+            </nav>
+            <!-- Redes Sociais no topo -->
+            <div class="social-links">
+                <a href="https://github.com/DannFurlan" target="_blank" class="social-link" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/daniel-furlan-ti/" target="_blank" class="social-link"
+                    aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ÁREA DE CONTEÚDO PRINCIPAL (TAB PANELS) -->
+    <main class="main-content">
+
+        <!-- ABA: INÍCIO -->
+        <section id="inicio" class="tab-panel active">
+            <div class="hero">
+                <div class="hero-bg-glow"></div>
+                <div class="container hero-content">
+                    <h1 class="hero-title">Daniel Colly <span class="text-accent">Furlan</span></h1>
+                    <h2 class="hero-subtitle">Técnico em Informática & Estudante de Eng. de Software.</h2>
+
+                    <div class="hero-badges" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+                        <span class="badge"
+                            style="background: rgba(139, 92, 246, 0.15); border: 1px solid var(--color-accent); color: var(--color-accent); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600;">💻
+                            Desenvolvedor</span>
+                        <span class="badge"
+                            style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">🎓
+                            Universitário</span>
+                    </div>
+
+                    <p class="hero-description">Bem-vindo à minha vitrine pessoal. Um espaço dedicado a compartilhar
+                        minha trajetória, evolução contínua, estudos e projetos na área de tecnologia.</p>
+
+                    <div class="hero-cta" style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                        <button class="btn-primary tab-switcher" data-target="sobre">Conhecer Minha Jornada</button>
+                        <button class="btn-secondary tab-switcher" data-target="experiencias"
+                            style="background: transparent; border: 2px solid var(--color-accent); color: #fff; padding: 0.9rem 2.4rem; font-weight: 600; border-radius: 4px; text-transform: uppercase; cursor: pointer; transition: 0.2s;"
+                            onmouseover="this.style.backgroundColor='rgba(139,92,246,0.1)'"
+                            onmouseout="this.style.backgroundColor='transparent'">Ver Experiências</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABA: SOBRE MIM -->
+        <section id="sobre" class="tab-panel section-padding">
+            <div class="container">
+                <div class="sobre-grid">
+                    <div class="sobre-img-container fade-up">
+                        <img src="./perfil.jpg.jpeg" alt="Foto de Daniel Colly Furlan" class="sobre-img"
+                            onerror="this.src='https://via.placeholder.com/400x500/0f172a/38bdf8?text=Sem+Foto'">
+                    </div>
+                    <div class="sobre-text fade-up" style="transition-delay: 0.1s;">
+                        <h2>Sobre <span class="text-accent">Mim</span></h2>
+                        <p>Olá! Meu nome é Daniel Colly Furlan, tenho 21 anos e sou apaixonado por tecnologia. Minha
+                            jornada acadêmica e profissional é marcada pela disciplina e pela vontade constante de
+                            evoluir.</p>
+                        <p>Me formei no Colégio da Polícia Militar, passei pela experiência fundamental do Exército
+                            Brasileiro e pelo ensino técnico em Informática. Atualmente, busco meu diploma em Engenharia
+                            de Software enquanto construo minha carreira no mercado de trabalho.</p>
+                        <p>Este espaço é uma vitrine transparente do que estou construindo. Acredito que a teoria aliada
+                            à prática, ao esforço e à disciplina é a verdadeira chave para o sucesso como profissional.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h3>21 Anos</h3>
+                                <p>Idade</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>Eng. Software</h3>
+                                <p>Em Andamento</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <a href="./Daniel_colly_furlan_curriculo.pdf.pdf" target="_blank" class="btn-primary"
+                                style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                Acessar Currículo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABA: EXPERIÊNCIAS -->
+        <section id="experiencias" class="tab-panel section-padding">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2>Minhas <span class="text-accent">Experiências</span></h2>
+                    <p>Minha trajetória no mercado de trabalho e as vivências que me forjaram.</p>
+                </div>
+
+                <div class="hackathon-timeline">
+                    <!-- Alternativa Etiquetas e Rótulos -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Dez/2024 - Presente</span>
+                            <h3>Alternativa Etiquetas e Rótulos</h3>
+                            <p class="timeline-role">💼 Profissional - Revisor Flexográfico</p>
+                            <p>Iniciei minha trajetória no setor de expedição e, demonstrando dedicação e capacidade,
+                                fui promovido em apenas 3 meses para o cargo de Revisor Flexográfico, função que
+                                desempenho atualmente.</p>
+                        </div>
+                    </div>
+
+                    <!-- Exército Brasileiro (Tiro de Guerra) -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024</span>
+                            <h3>Exército Brasileiro (Tiro de Guerra)</h3>
+                            <p class="timeline-role">🎖️ Experiência Extra - Serviço Militar Obrigatório</p>
+                            <p>Uma experiência fundamental para forjar disciplina, resiliência, liderança, trabalho em
+                                equipe e profundo respeito à hierarquia, características que levo para a minha vida
+                                profissional e acadêmica.</p>
+                            <div class="military-gallery" style="margin-top: 1rem;">
+                                <img src="./1.jpeg" alt="Foto Exército 1" loading="lazy">
+                                <img src="./2.jpeg" alt="Foto Exército 2" loading="lazy">
+                                <img src="./3.jpeg" alt="Foto Exército 3" loading="lazy">
+                                <img src="./4.jpeg" alt="Foto Exército 4" loading="lazy">
+                                <img src="./5.jpeg" alt="Foto Exército 5" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lemax Londrina -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Fev/2023 - Dez/2024</span>
+                            <h3>Lemax Londrina</h3>
+                            <p class="timeline-role">💼 Profissional - Analista de Inventário</p>
+                            <p>Comecei como Repositor de Mercadorias e, na metade da minha jornada na empresa, fui
+                                promovido para Analista de Inventário, lidando diretamente com o controle e a
+                                organização estratégica do estoque.</p>
+                        </div>
+                    </div>
+
+                    <!-- Dogão Lanches (Freelance) -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Out/2020 - Jul/2021</span>
+                            <h3>Dogão Lanches (Freelance)</h3>
+                            <p class="timeline-role">💼 Profissional - Atendente e Garçom</p>
+                            <p>Atuei como Atendente e Garçom em regime freelance. Minha primeira experiência com o
+                                público, desenvolvendo habilidades essenciais de atendimento, comunicação e trabalho sob
+                                pressão.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABA: ESTUDOS -->
+        <section id="estudos" class="tab-panel section-padding">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2>Minha <span class="text-accent">Formação Acadêmica</span></h2>
+                    <p>Caminho de estudos desde o Ensino Médio até a graduação.</p>
+                </div>
+
+                <div class="hackathon-timeline">
+                    <!-- Eng Software -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Fev/2026 - Presente</span>
+                            <h3>Engenharia de Software (Bacharelado)</h3>
+                            <p class="timeline-role">🎓 Centro Universitário Filadélfia (UNIFIL)</p>
+                            <p>Cursando ensino superior, aprofundando conhecimentos em desenvolvimento de sistemas,
+                                engenharia de requisitos, arquitetura de software e lógicas complexas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Inglês -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Mar/2025 - Jul/2025</span>
+                            <h3>Inglês (Nível Básico)</h3>
+                            <p class="timeline-role">🌎 FD English</p>
+                            <p>Estudos no idioma inglês focados na compreensão fundamental, permitindo leitura e
+                                entendimento de termos técnicos e documentações da área.</p>
+                        </div>
+                    </div>
+
+                    <!-- Técnico em Informática -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Jul/2023 - Dez/2024</span>
+                            <h3>Técnico em Manutenção e Suporte em Informática</h3>
+                            <p class="timeline-role">💻 CEEP Castaldi</p>
+                            <p>Formação técnica subsequente onde adquiri a base sobre infraestrutura, hardware, redes e
+                                suporte direto à área de TI.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ensino Médio -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Formação em 2022</span>
+                            <h3>Ensino Médio</h3>
+                            <p class="timeline-role">🏛️ 2º Colégio da Polícia Militar do Paraná</p>
+                            <p>Formação base realizada em instituição militarizada, desenvolvendo senso de
+                                responsabilidade, ordem e comprometimento desde cedo.</p>
+                            <div class="military-gallery" style="margin-top: 1rem;">
+                                <img src="./a1.jpeg" alt="Foto Ensino Médio 1" loading="lazy">
+                                <img src="./a2.jpeg" alt="Foto Ensino Médio 2" loading="lazy">
+                                <img src="./a3.jpeg" alt="Foto Ensino Médio 3" loading="lazy">
+                                <img src="./a4.jpeg" alt="Foto Ensino Médio 4" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Curso de Marketing Digital -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Jul/2021 - Out/2021</span>
+                            <h3>Curso de Marketing Digital</h3>
+                            <p class="timeline-role">📱 MSR (Mude Sua Rotina)</p>
+                            <p>Imersão no mundo do marketing digital, aprendendo sobre estratégias de vendas online,
+                                atração de clientes e comunicação digital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABA: DISCIPLINAS -->
+        <section id="disciplinas" class="tab-panel section-padding">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2>Disciplinas <span class="text-accent">Eng. de Software</span></h2>
+                    <p>Projeto Interdisciplinar: Relatórios e aprendizados do semestre.</p>
+                </div>
+
+                <!-- Sub-abas dos bimestres -->
+                <div class="sub-nav-links fade-up"
+                    style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 1rem;">
+                    <button class="sub-tab-btn active" data-subtab="bimestre1">1º Bimestre</button>
+                    <button class="sub-tab-btn" data-subtab="bimestre2">2º Bimestre</button>
+                </div>
+
+                <!-- Conteúdo dos bimestres -->
+                <div class="sub-tab-content">
+                    <div id="bimestre1" class="sub-tab-panel active fade-up" style="display: block;">
+                        <h3 style="color: var(--color-accent); margin-bottom: 1.5rem;">Conteúdo do 1º Bimestre</h3>
+                        <p style="color: var(--color-text-muted);">As disciplinas deste bimestre serão adicionadas aqui
+                            em breve.</p>
+                    </div>
+                    <div id="bimestre2" class="sub-tab-panel fade-up" style="display: none;">
+                        <h3 style="color: var(--color-accent); margin-bottom: 1.5rem;">Conteúdo do 2º Bimestre</h3>
+                        <p style="color: var(--color-text-muted);">As disciplinas deste bimestre serão adicionadas aqui
+                            em breve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABA: HACKATHONS -->
+        <section id="hackathons" class="tab-panel section-padding">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2>Ideathons & <span class="text-accent">Hackathons</span></h2>
+                    <p>Onde a teoria encontra a pressão, a colaboração e a inovação.</p>
+                </div>
+
+                <div class="hackathon-timeline">
+                    <!-- Evento 1 -->
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2026</span>
+                            <h3>Ideathon do Esporte e Lazer - UEL</h3>
+                            <p class="timeline-role">Participante</p>
+                            <p>Maratona de ideação voltada para o esporte e lazer, desenvolvendo soluções e validações
+                                rápidas no ambiente acadêmico da Universidade Estadual de Londrina.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Daniel Colly Furlan.</p>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
