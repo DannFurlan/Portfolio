@@ -105,4 +105,49 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // === LÓGICA DE MODAL DE IMAGENS (LIGHTBOX) ===
+    const imageModal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalClose = document.querySelector('.modal-close');
+    const galleryImages = document.querySelectorAll('.military-gallery img');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            if (imageModal && modalImg) {
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                imageModal.style.display = 'flex';
+                // Forçar reflow para ativar a transição de opacidade/escala
+                void imageModal.offsetWidth;
+                imageModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Travar o scroll da página
+            }
+        });
+    });
+
+    function closeModal() {
+        if (imageModal) {
+            imageModal.classList.remove('active');
+            setTimeout(() => {
+                imageModal.style.display = 'none';
+            }, 300); // Sincronizado com o transition do CSS (0.3s)
+            document.body.style.overflow = ''; // Destravar o scroll da página
+        }
+    }
+
+    if (imageModal) {
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal || e.target === modalClose) {
+                closeModal();
+            }
+        });
+
+        // Fechar com a tecla Esc
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && imageModal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    }
 });
