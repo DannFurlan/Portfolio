@@ -578,6 +578,11 @@ button {
 .timeline-content p:not(.timeline-role) {
     color: var(--color-text-muted);
     font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.timeline-content p:last-child {
+    margin-bottom: 0;
 }
 
 /* FOOTER */
